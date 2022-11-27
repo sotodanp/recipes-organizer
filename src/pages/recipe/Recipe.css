@@ -1,0 +1,81 @@
+.recipe {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.recipe h2 {
+    margin-top: .25em;
+}
+
+.recipe ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.recipe li {
+    list-style-type: none;
+    margin-right: 10px;
+    color: #777;
+}
+
+.recipe li:after {
+    content: ",";
+}
+
+.recipe li:last-child::after {
+    content: " ";
+}
+
+.method {
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.delete2 {
+    position: sticky;
+    display: flex;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.icons img {
+    margin: .5em;
+    align-items: flex-end;
+}
+
+/* dark mode */
+.recipe.dark {
+    background: #555;
+    color: #e4e4e4;
+}
+
+.recipe.dark h2 {
+    color: #e4e4e4;
+}
+
+.recipe.dark li {
+    color: #e4e4e4;
+    font-weight: 600;
+}
+
+.delete2.dark {
+    position: sticky;
+    display: flex;
+    margin-left: 0;
+    cursor: pointer;
+    filter: invert(100%);
+}
